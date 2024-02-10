@@ -1,0 +1,53 @@
+.navbar {
+    display: flex;
+    background-color: black;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list a{
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list a:hover {
+    background-color: rgb(3, 90, 167);
+}
+
+.nav-btn {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .nav-btn {
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 2px;
+        border: none;
+        background-color: black;
+        color: white;
+        display: block;
+        cursor: pointer;
+    }
+    .nav-list {
+        display: none;
+    }
+    .nav-btn:hover{
+        background-color: gray;
+    }
+    
+    .drop:hover .nav-list{
+        display: block;
+        position: absolute;
+        right: 1px;
+        background-color: black
+
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+}
